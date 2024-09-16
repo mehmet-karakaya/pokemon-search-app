@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Pokémon Search App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <main>
+      <label class="title-label">Pokémon Search</label>
+      <div class="info-container">
+        <div class="user-input-group">
+          <label for="user-input" class="input-label">Search for Pokémon Name or ID:</label>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Enter Pokémon Name"
+            required
+          />
+          <button type="button" id="search-button">
+              Search
+          </button>
+        </div>
+        <div class="poke-info-group hidden" id="poke-info-group">
+          <p class="poke-name-id"><span id="pokemon-name">SQUIRTLE</span><span id="pokemon-id"> #7</span></p>
+          <p class="poke-weight-height"><span id="weight">Weight: 90</span><span id="height"> Height: 5</span></p>
+        </div>
+        <div class="img-container hidden" id="img-container">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" alt="Pokémon Photo" id="sprite"id="pokemon-img"/>
+        </div>
+        <div class="grid1-container" id="types"></div>
+        <div class="grid2-container">
+          <div class="grid-item">Base</div>
+          <div class="grid-item">Stats</div>
+          <div class="grid-item">HP:</div>
+          <div class="grid-item" id="hp"></div>
+          <div class="grid-item">Attack:</div>
+          <div class="grid-item" id="attack"></div>
+          <div class="grid-item">Defense:</div>
+          <div class="grid-item" id="defense"></div>
+          <div class="grid-item">Sp. Attack:</div>
+          <div class="grid-item" id="special-attack"></div>
+          <div class="grid-item">Sp. Defense:</div>
+          <div class="grid-item" id="special-defense"></div>
+          <div class="grid-item">Speed:</div>
+          <div class="grid-item" id="speed"></div>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

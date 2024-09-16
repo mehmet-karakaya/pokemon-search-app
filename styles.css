@@ -1,0 +1,231 @@
+:root {
+  --dark-blue: #1d2c5e;
+  --mid-blue: #21386e;
+  --light-blue: #3466af;
+  --light-yellow: #ffcb05;
+  --dark-yellow: #c7a008;
+  --dark-pink: #AA336A;
+  --light-green: #7CFC00;
+  --light-red: #FF2400;
+  --glaucous-blue: #6082B6;
+  --bright-blue: #0096FF;
+  --pastel-green: #C1E1C1;
+  --ash-gray: #B2BEB5;
+  --bright-yellow: #FFEA00;
+  --ecru: #C2B280;
+  --hot-pink: #FF69B4;
+  --light-pink: #FFB6C1;
+  --mid-pink: #f86cc2;
+  --mid-brown: #967969;
+  --light-gray: #818589;
+  --ice-blue: #abf0ff;
+  --blue-gray: #7393B3;
+  --pastel-purple: #C3B1E1;
+  --dusty-rose: #C9A9A6;
+}
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  background-color: var(--mid-blue);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  max-width: 500px;
+  max-height: 700px;
+}
+
+.title-label {
+  display: block;
+  font-size: 55px;
+  color: var(--light-yellow);
+}
+
+.info-container {
+  display: block;
+  position: relative;
+  width: 500px;
+  height: 650px;
+  background-color: var(--dark-blue);
+  text-align: center;
+  text-indent: .1em;
+  border-radius: 25% 25% 0% 0% / 20% 20% 10% 10%;
+  box-shadow: 10px 10px 5px var(--light-blue);
+  margin: 03px;
+
+}
+
+.user-input-group {
+  position: relative;
+}
+
+.input-label {
+  display: inline-block;
+  font-size: 25px;
+  color: var(--dark-yellow);
+  position: relative;
+  top: 20px;
+}
+
+input {
+  display: inline-block;
+  font-size: 15px;
+  position: relative;
+  top: 20px;
+}
+
+button {
+  cursor: pointer;
+  color: #0a0a23;
+  background-color: #feac32;
+  background-image: linear-gradient(#fecc4c, #ffac33);
+  border: 3px solid #feac32;
+  border-radius: 12px;
+  width: 15%;
+  padding: 2px;
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  transition-duration: 0.2s;
+}
+button:hover {
+  color: #850000;
+  background-image: linear-gradient(#ffac33, #fecc4c);
+  border: 3px solid #feac32;
+}
+
+.poke-info-group {
+
+}
+.poke-name-id {
+  display: flex;
+  justify-content: space-between;
+  margin: 27px 65% 0px 25px;
+  font-size: 25px;
+  color: var(--dark-yellow);
+}
+.poke-weight-height {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 65% 0px 25px;
+  font-size: 15px;
+  color: var(--dark-yellow);
+}
+
+.img-container {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-container img{
+  width: 100%;
+  height: 100%;
+}
+
+.grid1-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  padding-left: 15px;
+}
+.grid1-item {
+  background-color: var(--light-blue);
+  border: none;
+  border-radius: 40%;
+  padding-left: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.grid2-container {
+  display: grid;
+  grid-template-columns: 70% 35%;
+  padding: 20px;
+  margin-top: -15px;
+}
+.grid-item {
+  background-color: var(--mid-blue);
+  border: none;
+  margin-left: 0px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: var(--light-yellow);
+  text-align: center;
+}
+
+.grass {
+  background-color: var(--light-green);
+}
+.poison {
+  background-color: var(--dark-pink);
+}
+.fire {
+  background-color: var(--light-red);
+}
+.flying {
+  background-color: var(--glaucous-blue);
+}
+.water {
+  background-color: var(--bright-blue);
+}
+.bug {
+  background-color: var(--pastel-green);
+}
+.normal {
+  background-color: var(--ash-gray);
+}
+.electric {
+  background-color: var(--bright-yellow);
+}
+.ground {
+  background-color: var(--ecru);
+}
+.fairy {
+  background-color: var(--hot-pink);
+}
+.fighting {
+  background-color: var(--light-pink);
+}
+.psychic {
+  background-color: var(--mid-pink);
+}
+.rock {
+  background-color: var(--mid-brown);
+}
+.steel {
+  background-color: var(--light-gray);
+}
+.ice {
+  background-color: var(--ice-blue);
+}
+.ghost {
+  background-color: var(--blue-gray);
+}
+.dragon {
+  background-color: var(--pastel-purple);
+}
+.dark {
+  background-color: var(--dusty-rose);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+
+@media (max-width: 375px) {
+  main {
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
